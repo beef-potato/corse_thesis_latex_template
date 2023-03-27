@@ -1,0 +1,16 @@
+\documentclass[UTF8, scheme=chinese, zihao=5]{ctexart}
+% 导言区，处理宏包和设置
+\ctexset{
+  section/format = \Large\bfseries\flushleft
+}
+\usepackage[
+    style=gb7714-2015,
+    % gbpub=false,         % Uncomment if you do NOT want '[S.l. : s.n.]' in reference entries, GitHub Issue (#47)
+    % gbnamefmt=lowercase, % Uncomment if you do NOT want uppercase author names in reference entries, GitHub Issue (#23)
+]{biblatex}
+\usepackage{amsmath}  %使用宏包，这里使用的是调用公式宏包，可以调用多个宏包
+\usepackage{graphicx}
+\graphicspath{{img/}}
+% 处理图像
+\addbibresource{template.bib}
+% \bibliography{template} % biblatex引入文献需要在前言里设置, 这个命令在文档里说已经过时了
